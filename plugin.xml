@@ -2,6 +2,7 @@
 <plugin id="cordova-plugin-file-upload" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
   <name>fileUpload</name>
+  <hook type="after_platform_add" src="hooks/addEmbedded.js" />
   <js-module name="fileUpload" src="www/fileUpload.js">
     <clobbers target="cordova.plugins.fileUpload"/>
   </js-module>
